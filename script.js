@@ -14,10 +14,9 @@ var random2 = document.querySelector(".random-2");
 
 function changeColor() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
-
     css.textContent = body.style.background + ";";
-
-    
+    random1.style.background = color1.value;
+    random2.style.background = color2.value;
 }
 
 function getRandomColor() {
